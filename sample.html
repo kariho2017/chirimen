@@ -1,0 +1,36 @@
+<!DOCTYP html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+
+        <SCRIPT LANGUAGE="JavaScript">
+                <!--
+                // 文字をフェードイン・フェードアウトさせる
+                itv = 250; // 色を変化させる間隔(ミリ秒単位)
+                cnt = 0;
+                function strFade(str) {
+                c = str.charAt(cnt++);
+                document.all["ID"].style.color = "#"+c+c+c+c+c+c;
+                if(cnt < str.length) setTimeout("strFade('" + str + "')",itv);
+                if(cnt == str.length) cnt = 0;
+                                        }
+                //-->
+                
+                var i = 0;
+                var cnt = 0;
+                
+                while (i < 1) {
+                  cnt++;
+                  i += 0.1;
+                }
+                console.log(cnt);
+        </SCRIPT>
+    </head>
+    <body>
+    <br clear="left">
+    <br />
+    </body>
+</html>
